@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF05EAC029E050890075E17E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05EABF29E050890075E17E /* StorageManager.swift */; };
+		CF05EAC229E0509E0075E17E /* AlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05EAC129E0509E0075E17E /* AlertControllerFactory.swift */; };
 		CFB2F67529DC403300901646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67429DC403300901646 /* AppDelegate.swift */; };
 		CFB2F67729DC403300901646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67629DC403300901646 /* SceneDelegate.swift */; };
-		CFB2F67929DC403300901646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67829DC403300901646 /* ViewController.swift */; };
-		CFB2F67C29DC403300901646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F67A29DC403300901646 /* Main.storyboard */; };
-		CFB2F67F29DC403300901646 /* MyTaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67D29DC403300901646 /* MyTaskList.xcdatamodeld */; };
+		CFB2F67929DC403300901646 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67829DC403300901646 /* TaskListViewController.swift */; };
+		CFB2F67F29DC403300901646 /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB2F67D29DC403300901646 /* TaskList.xcdatamodeld */; };
 		CFB2F68129DC403400901646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F68029DC403400901646 /* Assets.xcassets */; };
 		CFB2F68429DC403400901646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB2F68229DC403400901646 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF05EABF29E050890075E17E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CF05EAC129E0509E0075E17E /* AlertControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerFactory.swift; sourceTree = "<group>"; };
 		CFB2F67129DC403300901646 /* MyTaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB2F67429DC403300901646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFB2F67629DC403300901646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFB2F67829DC403300901646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFB2F67B29DC403300901646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFB2F67829DC403300901646 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		CFB2F67E29DC403300901646 /* MyTaskList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTaskList.xcdatamodel; sourceTree = "<group>"; };
 		CFB2F68029DC403400901646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB2F68329DC403400901646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF05EAB829E04F860075E17E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2F67429DC403300901646 /* AppDelegate.swift */,
+				CFB2F67629DC403300901646 /* SceneDelegate.swift */,
+				CFB2F68529DC403400901646 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CF05EABA29E04F910075E17E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2F67829DC403300901646 /* TaskListViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ../ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF05EABB29E0500F0075E17E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				CF05EAC129E0509E0075E17E /* AlertControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		CF05EABC29E0501C0075E17E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF05EABF29E050890075E17E /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF05EABD29E050260075E17E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2F68229DC403400901646 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF05EABE29E050470075E17E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2F67D29DC403300901646 /* TaskList.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CFB2F66829DC403300901646 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +111,13 @@
 		CFB2F67329DC403300901646 /* MyTaskList */ = {
 			isa = PBXGroup;
 			children = (
-				CFB2F67429DC403300901646 /* AppDelegate.swift */,
-				CFB2F67629DC403300901646 /* SceneDelegate.swift */,
-				CFB2F67829DC403300901646 /* ViewController.swift */,
-				CFB2F67A29DC403300901646 /* Main.storyboard */,
+				CF05EAB829E04F860075E17E /* App */,
+				CF05EABA29E04F910075E17E /* ViewControllers */,
+				CF05EABB29E0500F0075E17E /* Factories */,
+				CF05EABE29E050470075E17E /* Models */,
+				CF05EABC29E0501C0075E17E /* Services */,
+				CF05EABD29E050260075E17E /* Storyboards */,
 				CFB2F68029DC403400901646 /* Assets.xcassets */,
-				CFB2F68229DC403400901646 /* LaunchScreen.storyboard */,
-				CFB2F68529DC403400901646 /* Info.plist */,
-				CFB2F67D29DC403300901646 /* MyTaskList.xcdatamodeld */,
 			);
 			path = MyTaskList;
 			sourceTree = "<group>";
@@ -130,7 +182,6 @@
 			files = (
 				CFB2F68429DC403400901646 /* LaunchScreen.storyboard in Resources */,
 				CFB2F68129DC403400901646 /* Assets.xcassets in Resources */,
-				CFB2F67C29DC403300901646 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB2F67F29DC403300901646 /* MyTaskList.xcdatamodeld in Sources */,
-				CFB2F67929DC403300901646 /* ViewController.swift in Sources */,
+				CFB2F67F29DC403300901646 /* TaskList.xcdatamodeld in Sources */,
+				CFB2F67929DC403300901646 /* TaskListViewController.swift in Sources */,
+				CF05EAC229E0509E0075E17E /* AlertControllerFactory.swift in Sources */,
+				CF05EAC029E050890075E17E /* StorageManager.swift in Sources */,
 				CFB2F67529DC403300901646 /* AppDelegate.swift in Sources */,
 				CFB2F67729DC403300901646 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFB2F67A29DC403300901646 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFB2F67B29DC403300901646 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFB2F68229DC403400901646 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +338,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TN6W662TZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTaskList/Info.plist;
+				INFOPLIST_FILE = MyTaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +352,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.MyTaskList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +370,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TN6W662TZ9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTaskList/Info.plist;
+				INFOPLIST_FILE = MyTaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +384,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.MyTaskList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -364,13 +417,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CFB2F67D29DC403300901646 /* MyTaskList.xcdatamodeld */ = {
+		CFB2F67D29DC403300901646 /* TaskList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				CFB2F67E29DC403300901646 /* MyTaskList.xcdatamodel */,
 			);
 			currentVersion = CFB2F67E29DC403300901646 /* MyTaskList.xcdatamodel */;
-			path = MyTaskList.xcdatamodeld;
+			path = TaskList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
